@@ -4,7 +4,7 @@ if block_given?
   i = 0
   new_array = []
   while i<array.length
-    yield array[i]
+    new_array << yield array[i].upcase
     i+=1
   end
   else
