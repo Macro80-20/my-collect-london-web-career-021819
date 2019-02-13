@@ -4,7 +4,7 @@ if block_given?
   i = 0
   new_array = []
   while i<array.length
-    new_array << yield array[i]
+    new_array << yield (array[i].upcase)
     i+=1
   end
   else
@@ -13,5 +13,5 @@ if block_given?
   end
 
 my_collect(array) do
-  |element| element.upcase
+  |element| element.split(" ").first
 end
