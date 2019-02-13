@@ -7,9 +7,10 @@ if block_given?
     new_array << yield(array[i])
     i+=1
   end
-  else
-    return
+else
+  return
   end
+  new_array
   end
 
 my_collect(array) do
