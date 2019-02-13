@@ -4,7 +4,7 @@ if block_given?
   i = 0
   new_array = []
   while i<array.length
-    new_array << yield(array[i].capitalizes)
+    new_array << yield(array[i].capitalize)
     i+=1
   end
 else
