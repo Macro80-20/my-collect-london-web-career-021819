@@ -11,5 +11,5 @@ if block_given?
   end
 
 collect(array)do
-  |element| new_array << element
+  |element| new_array.push(element)
 end
