@@ -11,6 +11,3 @@ if block_given?
   end
   end
 
-collect(array)do
-  |element| new_array.push(element)
-end
